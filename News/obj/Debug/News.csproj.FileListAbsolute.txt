@@ -98,5 +98,3 @@ F:\新建文件夹\wenyiwen\News\bin\zh-Hans\Microsoft.Owin.Security.MicrosoftAc
 F:\新建文件夹\wenyiwen\News\obj\Debug\News.csprojResolveAssemblyReference.cache
 F:\新建文件夹\wenyiwen\News\obj\Debug\News.dll
 F:\新建文件夹\wenyiwen\News\obj\Debug\News.pdb
-F:\新建文件夹\wenyiwen\News\bin\News.dll.CodeAnalysisLog.xml
-F:\新建文件夹\wenyiwen\News\bin\News.dll.lastcodeanalysissucceeded

@@ -68,5 +68,3 @@ F:\新建文件夹\wenyiwen\News.Tests\bin\Debug\zh-Hans\Microsoft.Owin.Host.Sys
 F:\新建文件夹\wenyiwen\News.Tests\obj\Debug\News.Tests.csprojResolveAssemblyReference.cache
 F:\新建文件夹\wenyiwen\News.Tests\obj\Debug\News.Tests.dll
 F:\新建文件夹\wenyiwen\News.Tests\obj\Debug\News.Tests.pdb
-F:\新建文件夹\wenyiwen\News.Tests\bin\Debug\News.Tests.dll.CodeAnalysisLog.xml
-F:\新建文件夹\wenyiwen\News.Tests\bin\Debug\News.Tests.dll.lastcodeanalysissucceeded
