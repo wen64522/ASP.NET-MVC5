@@ -39,9 +39,11 @@ namespace News.Controllers
 
             return View();
         }
-        public ActionResult List()
+        public ActionResult List(int page=3)
         {
-            
+            string[] data = new string[] { "werewrewrfew", "dwqdwqdwqd", "wqewqewq", "drwqrdwq" };
+            ViewBag.data = data;
+            ViewBag.Page = page;
             return View();
         }
         public ActionResult Add()
