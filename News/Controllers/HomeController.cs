@@ -39,7 +39,7 @@ namespace News.Controllers
 
             return View();
         }
-        public ActionResult List(int page=3)
+        public ActionResult List(int page=4)
         {
             string[] data = new string[] { "werewrewrfew", "dwqdwqdwqd", "wqewqewq", "drwqrdwq" };
             ViewBag.data = data;
@@ -49,6 +49,12 @@ namespace News.Controllers
         public ActionResult Add()
         {
 
+            return View();
+        }
+        public ActionResult Save(string title,string content)
+        {
+            ViewBag.Title = title;
+            ViewBag.Conetent = content;
             return View();
         }
     }
