@@ -39,5 +39,15 @@ namespace News.Controllers
 
             return View();
         }
+        public ActionResult List()
+        {
+            
+            return View();
+        }
+        public ActionResult Add()
+        {
+
+            return View();
+        }
     }
 }
