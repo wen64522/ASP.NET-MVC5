@@ -16,13 +16,40 @@
             : base("name=BlogDatabase")
         {
         }
+        public virtual DbSet<Blog> Blogs { get; set; }
+        public virtual DbSet<BlogArticle> BlogArticles { get; set; }
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            var blogTable = modelBuilder.Entity<Blog>();
+            var blogArtticleTable = modelBuilder.Entity<BlogArticle>();
 
+            //blogTable.Property(o => o.Id).IsRequired();
+            blogTable.HasKey(o => o.Id);
+
+            //blogArtticleTable.Property(o => o.Id).IsRequired();
+            blogArtticleTable.HasKey(o => o.Id);
+
+
+            base.OnModelCreating(modelBuilder);
+        }
         //为您要在模型中包含的每种实体类型都添加 DbSet。有关配置和使用 Code First  模型
         //的详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkId=390109。
 
         // public virtual DbSet<MyEntity> MyEntities { get; set; }
     }
-
+    public class Blog
+    {
+        public int Id { get; set; }
+        public string Title { get; set; }
+    }
+    public class BlogArticle
+    {
+        public int Id { get; set; }
+        public int BlogId { get; set; }
+        public string Subject { get; set; }
+        public string Body { get; set; }
+        public DateTime DateCreated { get; set; }
+    }
     //public class MyEntity
     //{
     //    public int Id { get; set; }
