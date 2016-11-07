@@ -1,6 +1,7 @@
 ﻿namespace News
 {
     using System;
+    using System.ComponentModel.DataAnnotations;
     using System.Data.Entity;
     using System.Linq;
 
@@ -46,7 +47,10 @@
     {
         public int Id { get; set; }
         public int BlogId { get; set; }
+        [Required]
+        [StringLength(maximumLength: 20,MinimumLength =5)]
         public string Subject { get; set; }
+        [Required]
         public string Body { get; set; }
         public DateTime DateCreated { get; set; }
     }
